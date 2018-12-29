@@ -1,0 +1,70 @@
+body {
+	background-color: lightblue;
+}
+
+h1 {
+	color: black;
+	text-align: center;
+}
+
+h2 {
+	color: black;
+	text-align: center;
+}
+
+h3 {
+	color: black;
+	text-align: center;
+}
+h4 {
+	color: black;
+	text-align: center;
+}
+h5 {
+	color: black;
+	text-align: center;
+}
+
+h6 {
+	color: black;
+	text-align: center;
+}
+
+p {
+	font-size: 17px;
+}
+
+.codecentral{
+	color: black;
+	text-align: left;
+}	 
+
+.navbar {
+	overflow: hidden;
+	background-color: #000000;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	margin-left: -8px;
+}
+
+.navbar a {
+	float: left;
+	display: block;
+    color: #15ff00;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+	background: #ff00ee;
+	color: black;
+}
+
+.main {
+	padding: 16px;
+	margin-top: 30px;
+	height: 1500px;
+}
