@@ -37,7 +37,7 @@ p {
 .codecentral{
 	color: black;
 	text-align: left;
-}	 
+}
 
 .navbar {
 	overflow: hidden;
@@ -67,4 +67,7 @@ p {
 	padding: 16px;
 	margin-top: 30px;
 	height: 1500px;
+}
+.left {
+	text-align: left;
 }
