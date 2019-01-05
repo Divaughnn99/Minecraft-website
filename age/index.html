@@ -30,6 +30,53 @@
     <div class="main">
       <h2 class="left">instructions</h2>
       <p>press Ctrl+Shift+i</p>
+
+      <h4 class="left">javascript</h4>
+
+      <code>
+        <pre>
+          &lt;script type="text/javascript">
+            console.log("I will guess your age");
+            var age = prompt("pick a number 1-9")
+            var status = prompt("type 1 if you have already had your birthday this year otherwise, type 0")
+            age = ((age*2) + 5)*50
+            if(status == 1){
+              age+=1769
+            } else {
+              age+=1768
+            }
+            var year = prompt("what year where you born")
+
+            age-=year
+            age = age % 100
+
+            console.log("your age is " + age);
+          &lt;/script>
+        </pre>
+      </code>
+
+<h4 class="left">python</h4>
+
+      <code>
+        <pre>
+          print("I will guess your age.")
+          age = input('pick a number 1-9: ')
+          status = input('type 1 if you have already had your birthday this year, otherwise type 0: ')
+          age = int(age)
+          age = ((age*2) + 5)*50
+          status = int(status)
+          if status == 1:
+              age = age + 1769
+          else :
+              age = age + 1768
+          year = input('what year were you born: ')
+          year = int(year)
+          age = age - year
+          age = age % 100
+          print("your age is",age)
+
+        </pre>
+      </code>
     </div>
   </body>
 
