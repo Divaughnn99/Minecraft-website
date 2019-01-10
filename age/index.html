@@ -5,38 +5,21 @@
     <meta charset="utf-8">
     <title>Age Guess</title>
   </head>
-  <script type="text/javascript">
-    console.log("I will guess your age");
-    var age = prompt("pick a number 1-9")
-    var status = prompt("type 1 if you have already had your birthday this year otherwise, type 0")
-    age = ((age*2) + 5)*50
-    if(status == 1){
-      age+=1769
-    } else {
-      age+=1768
-    }
-    var year = prompt("what year where you born")
-
-    age-=year
-    age = age % 100
-
-    console.log("your age is " + age);
-  </script>
+ 
 
   <body>
     <div class="navbar">
       <a href="../index.html">go back</a>
     </div>
     <div class="main">
-      <h2 class="left">instructions</h2>
-      <p>press Ctrl+Shift+i</p>
+      <h2 class="left">Age</h3>
+      <p id="answer"></p>
 
       <h4 class="left">javascript</h4>
 
       <code>
         <pre>
           &lt;script type="text/javascript">
-            console.log("I will guess your age");
             var age = prompt("pick a number 1-9")
             var status = prompt("type 1 if you have already had your birthday this year otherwise, type 0")
             age = ((age*2) + 5)*50
@@ -50,7 +33,7 @@
             age-=year
             age = age % 100
 
-            console.log("your age is " + age);
+            document.getElementById("answer").innerHTML = "your age is " +age;
           &lt;/script>
         </pre>
       </code>
@@ -79,5 +62,23 @@
       </code>
     </div>
   </body>
+
+
+   <script type="text/javascript">
+    var age = prompt("pick a number 1-9")
+    var status = prompt("type 1 if you have already had your birthday this year otherwise, type 0")
+    age = ((age*2) + 5)*50
+    if(status == 1){
+      age+=1769
+    } else {
+      age+=1768
+    }
+    var year = prompt("what year where you born")
+
+    age-=year
+    age = age % 100
+
+    document.getElementById("answer").innerHTML = "your age is " +age;
+  </script>
 
 </html>
